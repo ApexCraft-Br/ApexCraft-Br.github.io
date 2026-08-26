@@ -405,6 +405,18 @@ p {
   margin-top: 40px;
 }
 
+.product-head > div {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-head h1 {
+  margin: 0;
+}
+
 .product-head img {
   width: 72px;
   height: 72px;
