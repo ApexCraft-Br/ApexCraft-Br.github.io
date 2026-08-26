@@ -39,7 +39,7 @@ Portuguese is the default. English is one tap away via mirrored `/en/` paths. Th
 
 ## Contact
 
-Privacy contact is currently the maintainer address `danieltodt@gmail.com`. Replace with a studio inbox before Play submit if you do not want a personal mailbox on the public policy.
+Privacy contact is the studio inbox `apexcraft@googlegroups.com`.
 
 ## Out of scope
 
