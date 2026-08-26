@@ -38,6 +38,7 @@ html {
   background: var(--bg);
   color: var(--fg);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -135,10 +136,11 @@ p {
 .header-inner,
 .footer-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px 0;
+  gap: 12px;
+  padding: 12px 0;
 }
 
 .brand {
@@ -176,6 +178,16 @@ p {
 
 .nav a:hover {
   color: var(--fg);
+}
+
+.nav a.nav-apps {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .nav a.nav-apps {
+    display: inline-flex;
+  }
 }
 
 .lang {
