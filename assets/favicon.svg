@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="ApexCraft">
+  <rect width="32" height="32" rx="7" fill="#06101F"/>
+  <path fill="none" stroke="#3B9EFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+    d="M8 24.5 L16 8.2 L24 24.5"/>
+  <path fill="#0F766E" d="M16 4.6 L18.4 7 L16 9.4 L13.6 7Z"/>
+  <circle cx="8" cy="24.5" r="2" fill="#0F766E"/>
+  <circle cx="24" cy="24.5" r="2" fill="#0F766E"/>
+</svg>
