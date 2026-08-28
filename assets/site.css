@@ -326,6 +326,19 @@ p {
   padding: 4px 12px;
 }
 
+.badge-soon {
+  color: var(--accent);
+}
+
+.badge-dev {
+  color: var(--muted);
+}
+
+.badge-prototype {
+  color: var(--fg);
+  box-shadow: var(--shadow-border);
+}
+
 .icon-app {
   width: 48px;
   height: 48px;
@@ -518,33 +531,8 @@ p {
   flex-wrap: wrap;
 }
 
-.lang-doc {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.lang-doc a,
-.lang-doc button {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0 16px;
-  border: 0;
-  border-radius: var(--radius-sm);
-  background: var(--surface);
-  color: var(--muted);
-  box-shadow: var(--shadow-border);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.lang-doc a[aria-current="true"],
-.lang-doc button[aria-pressed="true"] {
-  background: var(--fg);
-  color: var(--bg);
-  box-shadow: none;
+.kicker.tw {
+  color: var(--tw);
 }
 
 .policy header {
@@ -602,25 +590,6 @@ p {
 
 .policy a {
   color: var(--accent);
-}
-
-.kicker.tw {
-  color: var(--tw);
-}
-
-html[data-policy-lang="pt"] .policy-en {
-  display: none;
-}
-
-html[data-policy-lang="en"] .policy-pt {
-  display: none;
-}
-
-@media print {
-  html[data-policy-lang] .policy-en,
-  html[data-policy-lang] .policy-pt {
-    display: block !important;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

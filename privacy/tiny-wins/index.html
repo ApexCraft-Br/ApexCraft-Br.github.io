@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacidade — Tiny Wins — ApexCraft</title>
-  <meta name="description"
-    content="Política de privacidade do Tiny Wins (ApexCraft). Sem conta, sem nuvem, dados no aparelho.">
+  <meta name="description" content="Política de privacidade do Tiny Wins (ApexCraft). Sem conta, sem nuvem, dados no aparelho.">
   <meta name="theme-color" content="#06101F">
   <link rel="canonical" href="https://apexcraft-br.github.io/privacy/tiny-wins/">
   <link rel="alternate" hreflang="pt-BR" href="https://apexcraft-br.github.io/privacy/tiny-wins/">
   <link rel="alternate" hreflang="en" href="https://apexcraft-br.github.io/en/privacy/tiny-wins/">
   <link rel="alternate" hreflang="x-default" href="https://apexcraft-br.github.io/">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="/assets/site.css">
   <meta property="og:title" content="Privacidade — Tiny Wins — ApexCraft">
-  <meta property="og:description"
-    content="Política de privacidade do Tiny Wins (ApexCraft). Sem conta, sem nuvem, dados no aparelho.">
+  <meta property="og:description" content="Política de privacidade do Tiny Wins (ApexCraft). Sem conta, sem nuvem, dados no aparelho.">
   <meta property="og:url" content="https://apexcraft-br.github.io/privacy/tiny-wins/">
   <meta property="og:image" content="https://apexcraft-br.github.io/assets/og.jpg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="robots" content="index,follow">
 </head>
-
 <body class="circuit">
   <a class="skip" href="#content">Ir para o conteúdo</a>
   <header class="site-header">
@@ -45,120 +40,31 @@
     </div>
   </header>
   <div id="content">
-    <main class="wrap page">
-      <article class="policy" lang="pt-BR" id="pt">
-        <header>
-          <p class="kicker">Tiny Wins</p>
-          <h1>Política de privacidade — Tiny Wins</h1>
-          <p class="publisher">Publicado por ApexCraft (ApexCraft-Br)</p>
-          <p class="updated">Última atualização: <time datetime="2026-08-26">26 de agosto de 2026</time></p>
-        </header>
-        <section id="who">
-          <h2>Quem somos</h2>
-          <p>Esta política descreve o aplicativo Tiny Wins, publicado por ApexCraft (organização GitHub ApexCraft-Br).
-            ApexCraft é um estúdio brasileiro de software.</p>
-          <p>Dúvidas sobre esta política ou sobre o Tiny Wins: <a
-              href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p>
-        </section>
-        <section id="what">
-          <h2>O que é o aplicativo</h2>
-          <p>O Tiny Wins é um aplicativo de produtividade para micro-hábitos que levam menos de dois minutos. Não há
-            streaks, não há punição por pausar, e o progresso fica no aparelho.</p>
-          <p>O Tiny Wins não é um dispositivo médico. A categoria nas lojas é Produtividade.</p>
-        </section>
-        <section id="data">
-          <h2>Dados que armazenamos</h2>
-          <p>O Tiny Wins v1 não cria conta e não exige login. Não há sincronização na nuvem.</p>
-          <p>Tudo o que você registra permanece neste aparelho. Em v1 isso inclui:</p>
-          <ul>
-            <li>Hábitos que você cria (títulos escritos por você e metadados locais)</li>
-            <li>Histórico de vitórias (wins)</li>
-            <li>Progresso do avatar</li>
-            <li>Configurações (tema, acessibilidade, idioma, lembretes)</li>
-            <li>Sinal de onboarding (se você já passou pela introdução)</li>
-          </ul>
-        </section>
-        <section id="leave">
-          <h2>O que não sai do aparelho</h2>
-          <p>Títulos de hábitos escritos por você e o histórico de vitórias não saem do aparelho no v1. Não enviamos
-            esses dados para a ApexCraft, para servidores nossos ou para terceiros.</p>
-        </section>
-        <section id="permissions">
-          <h2>Permissões</h2>
-          <p>Notificações locais são opcionais. No Android, o aplicativo pede a permissão POST_NOTIFICATIONS em tempo de
-            execução. Os lembretes diários usam agendamento inexato; o Tiny Wins não usa o privilégio de alarme exato.
-          </p>
-          <p>Você pode recusar a permissão e usar o aplicativo sem lembretes.</p>
-        </section>
-        <section id="sdks">
-          <h2>Bibliotecas de terceiros</h2>
-          <p>O Tiny Wins v1 é um aplicativo Flutter. As bibliotecas abaixo rodam no aparelho. Nenhuma delas é kit de
-            anúncios, analytics ou rede social.</p>
-          <ul>
-            <li>Flutter — estrutura do aplicativo</li>
-            <li>shared_preferences — armazenamento local de preferências e dados do app</li>
-            <li>flutter_local_notifications — lembretes locais neste aparelho</li>
-            <li>timezone — fuso horário local para agendar lembretes</li>
-          </ul>
-        </section>
-        <section id="integrity">
-          <h2>Integridade do aparelho</h2>
-          <p>Compilações de produção podem executar verificações de integridade no próprio aparelho (safe_device, via
-            ac_integrity_safe_device). O v1 não inclui telemetria Talsec nem freeRASP. Essas verificações não enviam um
-            perfil do seu aparelho para a ApexCraft.</p>
-        </section>
-        <section id="sharing">
-          <h2>Compartilhamento</h2>
-          <p>No v1 não compartilhamos dados pessoais com terceiros. Não há anúncios, compras no aplicativo, kit de
-            analytics, login social nem feed público de conteúdo gerado por usuários.</p>
-        </section>
-        <section id="retention">
-          <h2>Retenção</h2>
-          <p>Como os dados ficam só neste aparelho, eles permanecem enquanto o aplicativo estiver instalado e o
-            armazenamento do app não for limpo. A ApexCraft não guarda uma cópia em servidor.</p>
-        </section>
-        <section id="deletion">
-          <h2>Exclusão</h2>
-          <p>No Tiny Wins v1 você apaga os dados deste aparelho em Ajustes → Privacidade e dados → Apagar todos os dados
-            neste aparelho. Esse comando limpa hábitos, vitórias, progresso do avatar, configurações e o sinal de
-            onboarding, e cancela os lembretes locais. A ApexCraft não guarda uma cópia em servidor.</p>
-          <p>Você também pode:</p>
-          <ul>
-            <li>Limpar o armazenamento do aplicativo nas configurações do sistema do aparelho, ou</li>
-            <li>Desinstalar o Tiny Wins</li>
-          </ul>
-        </section>
-        <section id="deletion-2">
-          <p>Qualquer uma dessas opções remove os mesmos dados neste aparelho. Não há conta nem nuvem para solicitar
-            exclusão remota.</p>
-        </section>
-        <section id="children">
-          <h2>Crianças</h2>
-          <p>O Tiny Wins não foi projetado para crianças. O público-alvo declarado no Google Play é 13 anos ou mais.</p>
-          <p>A classificação de conteúdo esperada (Everyone / ClassInd L) é resultado do questionário IARC e descreve o
-            conteúdo, não o público-alvo. O Tiny Wins não participa do programa Designed for Families.</p>
-        </section>
-        <section id="security">
-          <h2>Segurança</h2>
-          <p>Os dados do v1 não trafegam pela rede. A proteção prática é a do próprio aparelho: bloqueio de tela, contas
-            do sistema e o armazenamento isolado do aplicativo. Compilações de produção podem recusar continuar em
-            aparelhos com integridade comprometida, sem enviar telemetria.</p>
-        </section>
-        <section id="changes">
-          <h2>Alterações</h2>
-          <p>Se esta política mudar, atualizaremos a data no topo desta página. A URL permanece <a
-              href="https://apexcraft-br.github.io/privacy/tiny-wins/">https://apexcraft-br.github.io/privacy/tiny-wins/</a>
-            — não renomeamos esse caminho.</p>
-        </section>
-        <section id="contact">
-          <h2>Contato</h2>
-          <p>ApexCraft (ApexCraft-Br). E-mail: <a
-              href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p>
-        </section>
-        <p class="note">Contato: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a></p>
-      </article>
-    </main>
-  </div>
+  <main class="wrap page">
+    <article class="policy" lang="pt-BR" id="pt">
+    <header>
+      <p class="kicker">Tiny Wins</p>
+      <h1>Política de privacidade — Tiny Wins</h1>
+      <p class="publisher">Publicado por ApexCraft (ApexCraft-Br)</p>
+      <p class="updated">Última atualização: <time datetime="2026-08-26">26 de agosto de 2026</time></p>
+    </header>
+    <section id="who"><h2>Quem somos</h2><p>Esta política descreve o aplicativo Tiny Wins, publicado por ApexCraft (organização GitHub ApexCraft-Br). ApexCraft é um estúdio brasileiro de software.</p><p>Dúvidas sobre esta política ou sobre o Tiny Wins: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+<section id="what"><h2>O que é o aplicativo</h2><p>O Tiny Wins é um aplicativo de produtividade para micro-hábitos que levam menos de dois minutos. Não há streaks, não há punição por pausar, e o progresso fica no aparelho.</p><p>O Tiny Wins não é um dispositivo médico. A categoria nas lojas é Produtividade.</p></section>
+<section id="data"><h2>Dados que armazenamos</h2><p>O Tiny Wins v1 não cria conta e não exige login. Não há sincronização na nuvem.</p><p>Tudo o que você registra permanece neste aparelho. Em v1 isso inclui:</p><ul><li>Hábitos que você cria (títulos escritos por você e metadados locais)</li><li>Histórico de vitórias (wins)</li><li>Progresso do avatar</li><li>Configurações (tema, acessibilidade, idioma, lembretes)</li><li>Sinal de onboarding (se você já passou pela introdução)</li></ul></section>
+<section id="leave"><h2>O que não sai do aparelho</h2><p>Títulos de hábitos escritos por você e o histórico de vitórias não saem do aparelho no v1. Não enviamos esses dados para a ApexCraft, para servidores nossos ou para terceiros.</p></section>
+<section id="permissions"><h2>Permissões</h2><p>Notificações locais são opcionais. No Android, o aplicativo pede a permissão POST_NOTIFICATIONS em tempo de execução. Os lembretes diários usam agendamento inexato; o Tiny Wins não usa o privilégio de alarme exato.</p><p>Você pode recusar a permissão e usar o aplicativo sem lembretes.</p></section>
+<section id="sdks"><h2>Bibliotecas de terceiros</h2><p>O Tiny Wins v1 é um aplicativo Flutter. As bibliotecas abaixo rodam no aparelho. Nenhuma delas é kit de anúncios, analytics ou rede social.</p><ul><li>Flutter — estrutura do aplicativo</li><li>shared_preferences — armazenamento local de preferências e dados do app</li><li>flutter_local_notifications — lembretes locais neste aparelho</li><li>timezone — fuso horário local para agendar lembretes</li></ul></section>
+<section id="integrity"><h2>Integridade do aparelho</h2><p>Compilações de produção podem executar verificações de integridade no próprio aparelho (safe_device, via ac_integrity_safe_device). O v1 não inclui telemetria Talsec nem freeRASP. Essas verificações não enviam um perfil do seu aparelho para a ApexCraft.</p></section>
+<section id="sharing"><h2>Compartilhamento</h2><p>No v1 não compartilhamos dados pessoais com terceiros. Não há anúncios, compras no aplicativo, kit de analytics, login social nem feed público de conteúdo gerado por usuários.</p></section>
+<section id="retention"><h2>Retenção</h2><p>Como os dados ficam só neste aparelho, eles permanecem enquanto o aplicativo estiver instalado e o armazenamento do app não for limpo. A ApexCraft não guarda uma cópia em servidor.</p></section>
+<section id="deletion"><h2>Exclusão</h2><p>No Tiny Wins v1 você apaga os dados deste aparelho em Ajustes → Privacidade e dados → Apagar todos os dados neste aparelho. Esse comando limpa hábitos, vitórias, progresso do avatar, configurações e o sinal de onboarding, e cancela os lembretes locais. A ApexCraft não guarda uma cópia em servidor.</p><p>Você também pode:</p><ul><li>Limpar o armazenamento do aplicativo nas configurações do sistema do aparelho, ou</li><li>Desinstalar o Tiny Wins</li></ul><p>Qualquer uma dessas opções remove os mesmos dados neste aparelho. Não há conta nem nuvem para solicitar exclusão remota.</p></section>
+<section id="children"><h2>Crianças</h2><p>O Tiny Wins não foi projetado para crianças. O público-alvo declarado no Google Play é 13 anos ou mais.</p><p>A classificação de conteúdo esperada (Everyone / ClassInd L) é resultado do questionário IARC e descreve o conteúdo, não o público-alvo. O Tiny Wins não participa do programa Designed for Families.</p></section>
+<section id="security"><h2>Segurança</h2><p>Os dados do v1 não trafegam pela rede. A proteção prática é a do próprio aparelho: bloqueio de tela, contas do sistema e o armazenamento isolado do aplicativo. Compilações de produção podem recusar continuar em aparelhos com integridade comprometida, sem enviar telemetria.</p></section>
+<section id="changes"><h2>Alterações</h2><p>Se esta política mudar, atualizaremos a data no topo desta página. A URL permanece <a href="https://apexcraft-br.github.io/privacy/tiny-wins/">https://apexcraft-br.github.io/privacy/tiny-wins/</a> — não renomeamos esse caminho.</p></section>
+<section id="contact"><h2>Contato</h2><p>ApexCraft (ApexCraft-Br). E-mail: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+    <p class="note">Contato: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a></p>
+  </article>
+  </main></div>
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© 2026 ApexCraft (ApexCraft-Br). Todos os direitos reservados.</p>
@@ -169,5 +75,4 @@
     </div>
   </footer>
 </body>
-
 </html>
