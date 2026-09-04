@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — Restock Home — ApexCraft</title>
+  <meta name="description" content="Privacy policy for Restock Home / Despensa em Casa (ApexCraft). Offline-first pantry on this device; optional household sync.">
+  <meta name="theme-color" content="#06101F">
+  <link rel="canonical" href="https://apexcraft-br.github.io/en/privacy/restock-home/">
+  <link rel="alternate" hreflang="pt-BR" href="https://apexcraft-br.github.io/privacy/restock-home/">
+  <link rel="alternate" hreflang="en" href="https://apexcraft-br.github.io/en/privacy/restock-home/">
+  <link rel="alternate" hreflang="x-default" href="https://apexcraft-br.github.io/">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:title" content="Privacy — Restock Home — ApexCraft">
+  <meta property="og:description" content="Privacy policy for Restock Home / Despensa em Casa (ApexCraft).">
+  <meta property="og:url" content="https://apexcraft-br.github.io/en/privacy/restock-home/">
+  <meta property="og:image" content="https://apexcraft-br.github.io/assets/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index,follow">
+</head>
+<body class="circuit">
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/en/">
+        <img src="/assets/apexcraft-mark.svg" width="36" height="36" alt="">
+        <span>ApexCraft</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-apps" href="/en/#apps">Apps</a>
+        <a href="/en/privacy/" aria-current="page">Privacy</a>
+        <div class="lang" role="group" aria-label="Language">
+          <a href="/privacy/restock-home/" lang="pt-BR" hreflang="pt-BR">PT</a>
+          <a href="/en/privacy/restock-home/" lang="en" hreflang="en" aria-current="true">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="content">
+  <main class="wrap page">
+    <article class="policy" lang="en" id="en">
+    <header>
+      <p class="kicker">Restock Home</p>
+      <h1>Privacy policy — Restock Home</h1>
+      <p class="publisher">Published by ApexCraft (ApexCraft-Br)</p>
+      <p class="updated">Last updated: <time datetime="2026-09-04">4 September 2026</time></p>
+    </header>
+    <section id="who"><h2>Who we are</h2><p>This policy describes Restock Home (Portuguese name: Despensa em Casa), published by ApexCraft (GitHub organization ApexCraft-Br). ApexCraft is a Brazilian software studio.</p><p>Questions: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+    <section id="what"><h2>What the app is</h2><p>Restock Home is a productivity app for a household pantry: items, quantities, consumption, and a restock cart. It is not a medical device and does not treat health conditions. The store category is Productivity.</p></section>
+    <section id="data"><h2>Data we store</h2><p>The app is offline-first. The source of truth is on this device (local Drift database). In v1 that includes:</p><ul><li>Household and members (names you enter at onboarding)</li><li>Pantry items (name, category, ideal quantity, and stock events)</li><li>Open shopping cart and lines</li><li>Settings (theme, language, contrast, color inversion, last-sync stamp)</li></ul><p>There are no ads, in-app purchases, or a public feed. Item names are private to the household.</p></section>
+    <section id="sync"><h2>Optional sync</h2><p>You can use the app on this device only, with no account. When you generate an invite to share the household (optional), the app uses Firebase Auth and Firestore for that household only. With no invite, nothing is sent to the cloud.</p><p>The app keeps working if the network drops; the sync queue waits until it is back.</p></section>
+    <section id="permissions"><h2>Permissions</h2><p>v1 does not request notifications or exact-alarm privileges. Opening this policy uses the system browser (VIEW HTTPS), not an in-app WebView.</p></section>
+    <section id="sdks"><h2>Third-party libraries</h2><p>The app is Flutter. The libraries below run on the device. None is an ads, analytics, or social SDK.</p><ul><li>Flutter — application framework</li><li>Drift / SQLite — local database</li><li>ac_cache — on-device preferences</li><li>ac_connectivity — calm network indicator (does not block use)</li><li>ac_url_launcher — open this page in the browser</li><li>Firebase (Auth / Firestore) — only after you opt into an invite</li></ul></section>
+    <section id="integrity"><h2>Device integrity</h2><p>Production builds may run on-device integrity checks (safe_device, via ac_integrity_safe_device). Those checks do not send a device profile to ApexCraft.</p></section>
+    <section id="sharing"><h2>Sharing</h2><p>We do not sell data. No ads, IAP, analytics SDK, or social login. If household sync is on, that household’s data lives in Firebase under rules that limit access to invited members.</p></section>
+    <section id="retention"><h2>Retention</h2><p>Local data remains while the app is installed and app storage has not been cleared. If a cloud copy of the household exists, it remains until the owner deletes the account / household or requests deletion.</p></section>
+    <section id="deletion"><h2>Deletion</h2><p>In Settings you can wipe all data on this device. That command clears the local database and preferences and returns the app to onboarding. You can also clear app storage in system settings or uninstall the app.</p><p>Remote deletion of the Firebase household, when sync exists, is done by the owner in the same deletion flow (uninstalling the app is not enough).</p></section>
+    <section id="children"><h2>Children</h2><p>The app is not designed for children. The declared Google Play audience is 13 and older. It is not enrolled in Designed for Families. The expected content rating (Everyone / ClassInd L) describes the content, not the audience.</p></section>
+    <section id="security"><h2>Security</h2><p>Practical protection of local data is that of the device (screen lock and isolated storage). Production builds may refuse to continue on a compromised device, without sending telemetry.</p></section>
+    <section id="changes"><h2>Changes</h2><p>If this policy changes, we will update the date at the top. The URL stays <a href="https://apexcraft-br.github.io/en/privacy/restock-home/">https://apexcraft-br.github.io/en/privacy/restock-home/</a> — we do not rename that path.</p></section>
+    <section id="contact"><h2>Contact</h2><p>ApexCraft (ApexCraft-Br). Email: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+    <p class="note">Contact: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a></p>
+  </article>
+  </main></div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 ApexCraft (ApexCraft-Br). All rights reserved.</p>
+      <p class="footer-links">
+        <a href="/en/privacy/">Privacy</a>
+        <a href="mailto:apexcraft@googlegroups.com">Contact</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

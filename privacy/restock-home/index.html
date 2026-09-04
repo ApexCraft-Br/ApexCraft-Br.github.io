@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidade — Despensa em Casa — ApexCraft</title>
+  <meta name="description" content="Política de privacidade do Despensa em Casa / Restock Home (ApexCraft). Despensa offline-first neste aparelho; sincronização opcional da casa.">
+  <meta name="theme-color" content="#06101F">
+  <link rel="canonical" href="https://apexcraft-br.github.io/privacy/restock-home/">
+  <link rel="alternate" hreflang="pt-BR" href="https://apexcraft-br.github.io/privacy/restock-home/">
+  <link rel="alternate" hreflang="en" href="https://apexcraft-br.github.io/en/privacy/restock-home/">
+  <link rel="alternate" hreflang="x-default" href="https://apexcraft-br.github.io/">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:title" content="Privacidade — Despensa em Casa — ApexCraft">
+  <meta property="og:description" content="Política de privacidade do Despensa em Casa / Restock Home (ApexCraft).">
+  <meta property="og:url" content="https://apexcraft-br.github.io/privacy/restock-home/">
+  <meta property="og:image" content="https://apexcraft-br.github.io/assets/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index,follow">
+</head>
+<body class="circuit">
+  <a class="skip" href="#content">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/apexcraft-mark.svg" width="36" height="36" alt="">
+        <span>ApexCraft</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="nav-apps" href="/#apps">Aplicativos</a>
+        <a href="/privacy/" aria-current="page">Privacidade</a>
+        <div class="lang" role="group" aria-label="Idioma">
+          <a href="/privacy/restock-home/" lang="pt-BR" hreflang="pt-BR" aria-current="true">PT</a>
+          <a href="/en/privacy/restock-home/" lang="en" hreflang="en">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="content">
+  <main class="wrap page">
+    <article class="policy" lang="pt-BR" id="pt">
+    <header>
+      <p class="kicker">Despensa em Casa</p>
+      <h1>Política de privacidade — Despensa em Casa</h1>
+      <p class="publisher">Publicado por ApexCraft (ApexCraft-Br)</p>
+      <p class="updated">Última atualização: <time datetime="2026-09-04">4 de setembro de 2026</time></p>
+    </header>
+    <section id="who"><h2>Quem somos</h2><p>Esta política descreve o aplicativo Despensa em Casa (nome em inglês: Restock Home), publicado por ApexCraft (organização GitHub ApexCraft-Br). ApexCraft é um estúdio brasileiro de software.</p><p>Dúvidas: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+    <section id="what"><h2>O que é o aplicativo</h2><p>Despensa em Casa é um aplicativo de produtividade para controlar estoque de uma despensa doméstica: itens, quantidades, consumo e um carrinho de reposição. Não é um dispositivo médico e não trata condições de saúde. A categoria nas lojas é Produtividade.</p></section>
+    <section id="data"><h2>Dados que armazenamos</h2><p>O aplicativo é offline-first. A fonte da verdade fica neste aparelho (banco local Drift). Em v1 isso inclui:</p><ul><li>Casa e membros (nomes que você informa no início)</li><li>Itens da despensa (nome, categoria, quantidade ideal e eventos de estoque)</li><li>Carrinho de compras aberto e linhas</li><li>Configurações (tema, idioma, contraste, inversão de cores, última sincronização)</li></ul><p>Não há anúncios, compras no aplicativo nem feed público. Nomes de itens são privados da casa, não conteúdo público.</p></section>
+    <section id="sync"><h2>Sincronização opcional</h2><p>Você pode usar o aplicativo só neste aparelho, sem conta. Quando você gerar um convite para dividir a casa (recurso opcional), o aplicativo passa a usar Firebase Auth e Firestore só para essa casa. Sem convite, nada é enviado à nuvem.</p><p>O aplicativo continua funcionando se a rede cair; a fila de sincronização espera a conexão voltar.</p></section>
+    <section id="permissions"><h2>Permissões</h2><p>v1 não pede notificações nem alarme exato. Abrir esta política usa o navegador do sistema (intent VIEW HTTPS), sem WebView embutida.</p></section>
+    <section id="sdks"><h2>Bibliotecas de terceiros</h2><p>O aplicativo é Flutter. As bibliotecas abaixo rodam no aparelho. Nenhuma é kit de anúncios, analytics ou rede social.</p><ul><li>Flutter — estrutura do aplicativo</li><li>Drift / SQLite — banco local</li><li>ac_cache — preferências neste aparelho</li><li>ac_connectivity — indicador calmo de rede (não bloqueia o uso)</li><li>ac_url_launcher — abrir esta página no navegador</li><li>Firebase (Auth / Firestore) — só depois que você optar por convite</li></ul></section>
+    <section id="integrity"><h2>Integridade do aparelho</h2><p>Compilações de produção podem executar verificações de integridade no próprio aparelho (safe_device, via ac_integrity_safe_device). Essas verificações não enviam um perfil do aparelho para a ApexCraft.</p></section>
+    <section id="sharing"><h2>Compartilhamento</h2><p>Não vendemos dados. Sem anúncios, IAP, kit de analytics ou login social. Se a sincronização da casa estiver ativa, os dados daquela casa ficam no Firebase sob regras que restringem o acesso aos membros convidados.</p></section>
+    <section id="retention"><h2>Retenção</h2><p>Dados locais permanecem enquanto o aplicativo estiver instalado e o armazenamento não for limpo. Se houver cópia na nuvem da casa, ela permanece até o dono apagar a conta / a casa ou solicitar exclusão.</p></section>
+    <section id="deletion"><h2>Exclusão</h2><p>Em Ajustes você pode apagar todos os dados deste aparelho. Esse comando limpa o banco local e as preferências e devolve o aplicativo à tela inicial. Você também pode limpar o armazenamento do sistema ou desinstalar o aplicativo.</p><p>A exclusão remota da casa no Firebase, quando a sincronização existir, é feita pelo dono no mesmo fluxo de exclusão (não basta desinstalar o app).</p></section>
+    <section id="children"><h2>Crianças</h2><p>O aplicativo não foi projetado para crianças. O público-alvo no Google Play é 13 anos ou mais. Não participa do programa Designed for Families. A classificação de conteúdo esperada (Everyone / ClassInd L) descreve o conteúdo, não o público-alvo.</p></section>
+    <section id="security"><h2>Segurança</h2><p>A proteção prática dos dados locais é a do aparelho (bloqueio de tela e armazenamento isolado). Compilações de produção podem recusar continuar em aparelhos com integridade comprometida, sem enviar telemetria.</p></section>
+    <section id="changes"><h2>Alterações</h2><p>Se esta política mudar, atualizaremos a data no topo. A URL permanece <a href="https://apexcraft-br.github.io/privacy/restock-home/">https://apexcraft-br.github.io/privacy/restock-home/</a> — não renomeamos esse caminho.</p></section>
+    <section id="contact"><h2>Contato</h2><p>ApexCraft (ApexCraft-Br). E-mail: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a>.</p></section>
+    <p class="note">Contato: <a href="mailto:apexcraft@googlegroups.com">apexcraft@googlegroups.com</a></p>
+  </article>
+  </main></div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 ApexCraft (ApexCraft-Br). Todos os direitos reservados.</p>
+      <p class="footer-links">
+        <a href="/privacy/">Privacidade</a>
+        <a href="mailto:apexcraft@googlegroups.com">Contato</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
