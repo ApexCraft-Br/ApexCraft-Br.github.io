@@ -532,7 +532,233 @@ p {
 }
 
 .kicker.tw {
-  color: var(--tw);
+  color: #2dd4bf;
+}
+
+/* Tiny Wins promotional landing page styles */
+.tw-hero {
+  padding: 36px 0 56px;
+}
+
+.tw-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.tw-identity img {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgb(15 118 110 / 0.35), 0 0 0 1px rgb(255 255 255 / 0.14);
+}
+
+.tw-identity-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tw-identity-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tw-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgb(15 118 110 / 0.25);
+  color: #5eead4;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.25);
+}
+
+.tw-headline {
+  margin: 24px 0 0;
+  font-size: clamp(2.125rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.tw-headline .accent-tw {
+  color: #2dd4bf;
+}
+
+.tw-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tw-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgb(15 118 110 / 0.16);
+  color: var(--fg);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.22);
+}
+
+.tw-pill svg {
+  color: #2dd4bf;
+  flex-shrink: 0;
+}
+
+.btn-tw {
+  background: #14b8a6;
+  color: #042f2e;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgb(20 184 166 / 0.28);
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.btn-tw:hover {
+  background: #2dd4bf;
+}
+
+.tw-hero-banner {
+  margin-top: 40px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: #041e21;
+  box-shadow:
+    0 24px 64px -12px rgb(4 25 29 / 0.8),
+    0 0 0 1px rgb(45 212 191 / 0.22);
+}
+
+.tw-hero-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.3);
+}
+
+.feature-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgb(15 118 110 / 0.22);
+  color: #2dd4bf;
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.22);
+}
+
+.feature-card h3 {
+  margin: 18px 0 0;
+  font-size: 1.125rem;
+  letter-spacing: -0.015em;
+}
+
+.feature-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.steps-grid {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 720px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step-badge {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgb(15 118 110 / 0.25);
+  color: #2dd4bf;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.28);
+}
+
+.tw-cta-box {
+  margin: 16px 0 80px;
+  padding: 40px 28px;
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(ellipse 90% 80% at 85% 0%, rgb(15 118 110 / 0.28), transparent 65%),
+    var(--surface);
+  box-shadow: 0 0 0 1px rgb(45 212 191 / 0.22);
+}
+
+@media (min-width: 640px) {
+  .tw-cta-box {
+    padding: 48px;
+  }
+}
+
+.tw-cta-box h2 {
+  margin: 0;
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+  letter-spacing: -0.025em;
 }
 
 .policy header {
